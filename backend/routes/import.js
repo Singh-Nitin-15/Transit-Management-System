@@ -6,7 +6,7 @@ const fs      = require('fs');
 const db      = require('../db');
 const { requireAdmin } = require('../middleware/auth');
 
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: '/tmp' });
 
 const tableConfig = {
   buses: {
